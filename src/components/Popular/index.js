@@ -6,6 +6,8 @@ import Footer from '../Footer'
 
 import PopularItem from '../PopularItem'
 
+import './index.css'
+
 class Popular extends Component {
   render() {
     return (
@@ -15,13 +17,11 @@ class Popular extends Component {
           console.log('username from Home', {username})
 
           return (
-            <>
-              <div className="home-container" testid="popular">
-                <Header />
-                <PopularItem />
-                <Footer />
-              </div>
-            </>
+            <div className="home-container" testid="popular">
+              <Header />
+              <PopularItem />
+              <Footer />
+            </div>
           )
         }}
       </MovieContext.Consumer>

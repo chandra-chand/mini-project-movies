@@ -1,0 +1,19 @@
+.search-route {
+  background-color: black;
+  min-height: 100vh;
+}
+.failure-view {
+  padding-top: 80px;
+  color: white;
+}
+.no-movies-image {
+  height: 500px;
+  width: 500px;
+}
+.f-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}

@@ -15,13 +15,7 @@ class Login extends Component {
     return (
       <MovieContext.Consumer>
         {value => {
-          const {
-            username,
-            password,
-            changeUsername,
-            changePassword,
-          } = value
-
+          const {username, password, changeUsername, changePassword} = value
           const onChangeUsername = event => {
             changeUsername(event)
           }
@@ -37,6 +31,8 @@ class Login extends Component {
               expires: 30,
             })
             history.replace('/')
+            localStorage.setItem('username', username)
+            localStorage.setItem('password', password)
           }
 
           const onSubmitFailure = errorMsg => {
